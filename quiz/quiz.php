@@ -33,7 +33,7 @@ echo "<br><p>Question 2: How many answer for this question?</p>";
 echo "<p>&emsp;&emsp;&emsp;Your answer: $answer </p>";
 echo "<p>&emsp;&emsp;&emsp;Correct answer: $ans_answer </p>";
 
-echo "<br><p>Question 3: What's the cutest pet to have</p>";
+echo "<br><p>Question 3: What's the cutest pet to have?</p>";
 echo "<p>&emsp;&emsp;&emsp;Your answer: $pet </p>";
 echo "<p>&emsp;&emsp;&emsp;Correct answer: $ans_pet </p>";
 
