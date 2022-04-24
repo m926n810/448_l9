@@ -26,4 +26,10 @@ input{
     height: 50px;
     font-size: 20px;
     color: brown;
+    padding: auto;
+    border: brown solid 3px;
+}
+.innercenter{
+    margin:30px;
+    max-width: 75%;
 }

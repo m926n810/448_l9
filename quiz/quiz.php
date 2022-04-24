@@ -5,7 +5,7 @@ echo '
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-<div class="center">';
+<div class="center"><div class="innercenter">';
 $rain = $_POST["wasrain"];
 $answer = $_POST["cntasw"];
 $pet =$_POST["cutepet"];
@@ -45,5 +45,5 @@ echo "<p>Question 5: Who am I?</p>";
 echo "<p>Your answer: $name </p>";
 echo "<p>Correct answer: $ans_name </p>";
 
-echo '</div></body>';
+echo '</div></div></body>';
 ?>
