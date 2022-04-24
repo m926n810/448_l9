@@ -7,7 +7,7 @@ echo '
 <body>
 <div class="center"><div class="innercenter">';
 $rain = $_POST["wasrain"];
-$answer = $_POST["cntansw"];
+$answer = $_POST["cntanws"];
 $pet =$_POST["cutepet"];
 $sky =$_POST["sky"];
 $name = $_POST["name"];
@@ -26,24 +26,24 @@ if($sky == $ans_sky) $grade += 20;
 if($name == $ans_name) $grade += 20;
 echo "<br><center><div class='gradebox'>Your grade is: $grade/100</div></center>";
 echo "<br><p>Question 1: Did it rain yesterday?</p>";
-echo "<p>   Your answer: $rain </p>";
-echo "<p>   Correct answer: $ans_rain </p>";
+echo "<p>&emsp;&emsp;&emsp;Your answer: $rain </p>";
+echo "<p>&emsp;&emsp;&emsp;Correct answer: $ans_rain </p>";
 
 echo "<br><p>Question 2: How many answer for this question?</p>";
-echo "<p>   Your answer: $answer </p>";
-echo "<p>   Correct answer: $ans_answer </p>";
+echo "<p>&emsp;&emsp;&emsp;Your answer: $answer </p>";
+echo "<p>&emsp;&emsp;&emsp;Correct answer: $ans_answer </p>";
 
 echo "<br><p>Question 3: What's the cutest pet to have</p>";
-echo "<p>   Your answer: $pet </p>";
-echo "<p>   Correct answer: $ans_pet </p>";
+echo "<p>&emsp;&emsp;&emsp;Your answer: $pet </p>";
+echo "<p>&emsp;&emsp;&emsp;Correct answer: $ans_pet </p>";
 
 echo "<br><p>Question 4: What's the color of the sky?</p>";
-echo "<p>   Your answer: $sky </p>";
-echo "<p>   Correct answer: $ans_sky </p>";
+echo "<p>&emsp;&emsp;&emsp;Your answer: $sky </p>";
+echo "<p>&emsp;&emsp;&emsp;Correct answer: $ans_sky </p>";
 
 echo "<br><p>Question 5: Who am I?</p>";
-echo "<p>   Your answer: $name </p>";
-echo "<p>   Correct answer: $ans_name </p>";
+echo "<p>&emsp;&emsp;&emsp;Your answer: $name </p>";
+echo "<p>&emsp;&emsp;&emsp;Correct answer: $ans_name </p>";
 
 echo '</div></div></body>';
 ?>
