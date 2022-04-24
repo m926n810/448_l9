@@ -1,0 +1,10 @@
+.center{
+    display: flex;
+    align-content: right;
+    align-items: center;
+    margin: auto;
+    color:blue;
+    background-color: beige;
+    max-width: 1000px;
+    padding: 40px;
+}
