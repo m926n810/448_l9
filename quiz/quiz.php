@@ -5,7 +5,7 @@ echo '
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-<div class="center">';
+<div class="centersol">';
 $rain = $_POST["wasrain"];
 $answer = $_POST["cntasw"];
 $pet =$_POST["cutepet"];
