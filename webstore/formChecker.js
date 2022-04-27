@@ -46,16 +46,18 @@ function rm_item_handler(item){
 }
 
 function addtocart_button_handler(item){
-    let itemname = nameof(item);
-    let itemincart = document.getElementById(item);
-    if(itemincart.classList.contains('hidden')){
-        itemincart.classList.remove('hidden');
-        document.getElementsByClassName(itemname)[0].value=1;
-        checkout_button_handler();
-    }else{
-        console.log(itemname);
-        console.log(document.getElementsByClassName(itemname)[0]);
-        document.getElementsByClassName(itemname)[0].stepUp(1);
+    if(loginyet){
+            let itemname = nameof(item);
+        let itemincart = document.getElementById(item);
+        if(itemincart.classList.contains('hidden')){
+            itemincart.classList.remove('hidden');
+            document.getElementsByClassName(itemname)[0].value=1;
+            checkout_button_handler();
+        }else{
+            console.log(itemname);
+            console.log(document.getElementsByClassName(itemname)[0]);
+            document.getElementsByClassName(itemname)[0].stepUp(1);
+        }
     }
 }
 

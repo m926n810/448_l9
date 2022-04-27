@@ -49,24 +49,24 @@ for($i=0;$i<4;$i++){
     if($quantity[$i]>0){
         echo "<tr>
                 <td>" .$item[$i]." </td>
-                <td>".$price[$i]."</td>
+                <td>$".$price[$i]."</td>
                 <td>".$quantity[$i]."</td>
-                <td>".$total[$i]."</td>
+                <td>$".$total[$i]."</td>
             </tr>";
     }
 }
 echo " </table>
 <table class='totaltable'><tr>
             <th>Sub-total:</th>
-            <td>".$subtotal."</td>
+            <td>&emsp;$".$subtotal."</td>
         </tr>
         <tr>
             <th>Shipping fee: </th>
-            <td>".$shipingfee."</td>
+            <td>&emsp;$".$shipingfee."</td>
         </tr>
         <tr>
             <th>Total:</th>
-            <td>".$alltotal."</td>
+            <td>&emsp;$".$alltotal."</td>
         </tr>
     </table>
 </div>";

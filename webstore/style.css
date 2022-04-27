@@ -242,7 +242,7 @@ table{
     border-radius: 5px;
 }
 th{
-    background-color: #147876da;
+    background-color: #116665cf;
     color: beige;
     font-size: 21px;
     font-family:Cambria;
@@ -250,10 +250,11 @@ th{
 td {
     font-size: 18px;
     border: none;
-    border-bottom: 1px solid #086462da;
+    border-bottom: 1px solid #075755f0;
 }
 tr:hover{
-    background-color: #4bbebc81;
+    color:rgb(250, 250, 229);
+    background-color: #42a09fc6;
     transition: 0.1s linear;
 }
 .bought-list{
