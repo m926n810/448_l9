@@ -17,10 +17,12 @@ $quantity =array(
     $_POST["umbrella"],
     $_POST["yacht"]
 );
+
 $total = array() ;
 $subtotal=0;
 $alltotal = 0;
 for($i=0;$i<4;$i++){
+    if($quantity[$i] == "Array") $quantity[$i] = 0;
     $total[$i] = $price[$i]*$quantity[$i];
     $subtotal += $total[$i];
 }
@@ -43,12 +45,12 @@ echo "  <title>Nhat's Webstore</title>
             <th>Total</th>
         </tr>";
 for($i=0;$i<4;$i++){
-    if($quantity[$i-1]>0){
+    if($quantity[$i]>0){
         echo "<tr>
-                <th>" .$item[$i-1]." </th>
-                <th>".$price[$i-1]."</th>
-                <th>".$quantity[$i-1]."</th>
-                <th>".$total[$i-1]."</th>
+                <th>" .$item[$i]." </th>
+                <th>".$price[$i]."</th>
+                <th>".$quantity[$i]."</th>
+                <th>".$total[$i]."</th>
             </tr>";
     }
 }
