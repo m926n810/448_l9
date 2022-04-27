@@ -26,7 +26,7 @@ for($i=0;$i<4;$i++){
     $subtotal += $total[$i];
 }
 $shipingfee = $_POST["shippingchoice"];
-$alltotal = $subtotal + $shippingfee;
+$alltotal = $subtotal + $shipingfee;
 echo "<head>  
 <title>Nhat's Webstore</title>
 <link rel='stylesheet' href='style.css'>
