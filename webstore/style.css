@@ -1,0 +1,192 @@
+body{
+    background-image: url('images/beach.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+div{
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+.top{
+    background-color:#ff4447d1;
+    margin:10px;
+    width: auto;
+    height: 76px;
+    color:beige;
+    font-size: 16px;
+    text-align: center;
+}
+.center{
+    margin-top: 20px;
+    align-self: flex-start;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1700px;
+    justify-content: space-around;
+    border: none;
+;
+}
+.itemsbox{
+    display: flex;
+    flex: wrap;
+    align-self:flex-start;
+    width: 1250px;
+    height: 840px;
+    background-color: #ffffff9f;
+}
+.item{
+    background-color: #5ea8a7da;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart{
+    background-color: #ffffff93;
+    width: 400px;/*temporaryly000000000000000000000000000*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.log-in{
+    background-color: #398281dd;
+    width: 400px;
+    display: none; /*temporaryly000000000000000000000000000*/
+    flex-direction: column;
+    align-items: center;
+    color: rgb(252, 244, 216);
+    font-size: 30px;
+    
+}
+.cart-label{
+    text-align: center;
+    background-color: rgb(252, 244, 216);
+    color: #398281da;
+    height: 45px;
+    font-size: 40px;
+    width: 400px;
+}
+.item-label{
+    text-align: center;
+    background-color: rgb(252, 244, 216);
+    color: #398281da;
+    height: 45px;
+    font-size: 40px;
+}
+.brand{
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 4px 3px #398281da;
+}
+.itlist{
+    border-radius: 4px;
+    height: 250px;
+    border: 1px solid #ffffff;
+    margin-top: 14px;
+}
+.semi-center{
+    border:none;
+}
+button{
+    width: 80%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    transition-duration: 0.4s;
+    background-color: #398281;
+    color: #ffffffe8;
+    border-color: #FFFFFF;
+}
+button:hover{
+    background-color: #ffffffec;
+    color:  #398281da;
+}
+label{
+    color:#FFFFFF;
+    font-size: 24px;
+}
+.price{
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+}
+input{
+    margin-bottom: 10px;
+    margin: top 5px;
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgb(249, 244, 228);
+    color:#398281
+}
+.loginbutton{
+    margin-top: 16px;
+    margin-bottom: 30px;
+    width: 260px;
+}
+.warning{
+   border: none;
+   font-size: 20px; 
+   height:0;
+   opacity:0;
+   transition: opacity 0.3s ease-out;
+   display:block;
+   overflow:hidden;
+   height: 300px;
+}
+.addeditem{
+    margin-top:8px;
+    margin-left:8px;
+    margin-right: 8px;
+    height: 120px;
+    width: 380px;
+    display: flex;
+    background-color: #5ea8a7da;
+}
+.check-out{
+    margin-top: 10px;
+    display: block;
+}
+.img-incart{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 17px;
+    border: 1px solid white;
+    border-radius: 3px;
+    justify-content: space-around;
+}
+.item-incart-labels{
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+.quantity{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    border: none;
+}
+.quanbox{
+    width: 225px;
+    height: 30px;
+    font-size: 24px;
+    background-color: rgb(252, 244, 216);
+    text-align: center;
+}
+.rm{
+    font-size: 12px;
+    height: 20px;
+    width: 120px;
+    background-color: #086462da;
+    color: white;
+}
+.hidden{
+    display: none;
+}
