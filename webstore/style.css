@@ -23,7 +23,7 @@ div{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1700px;
+    max-width: 1500px;
     justify-content: space-around;
     border: none;
 ;
@@ -33,7 +33,7 @@ div{
     flex: wrap;
     align-self:flex-start;
     max-width: 1250px;
-    height: 840px;
+    height: 800px;
     background-color: #ffffff9f;
 }
 .item{
@@ -51,7 +51,6 @@ div{
     display: none;
     flex-direction: column;
     align-items: center;
-    
 }
 .log-in{
     background-color: #398281dd;
@@ -61,7 +60,6 @@ div{
     align-items: center;
     color: rgb(252, 244, 216);
     font-size: 30px;
-    
 }
 .cart-label{
     text-align: center;
@@ -143,6 +141,7 @@ input{
    display:block;
    overflow:hidden;
    height: 300px;
+   cursor: default;
 }
 .addeditem{
     margin-top:8px;
@@ -231,8 +230,42 @@ iframe{
     font-size: 10px;
 }
 .receive-center{
-    background-color: #ffffff9f;
+    background-color: #ffffffbb;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    border-collapse: collapse;
+    color:#006b6a ;
+    border-radius: 5px;
+}
+th{
+    background-color: #147876da;
+    color: beige;
+    font-size: 21px;
+    font-family:Cambria;
+}
+td {
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #086462da;
+}
+tr:hover{
+    background-color: #4bbebc81;
+    transition: 0.1s linear;
 }
 .bought-list{
     width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.totaltable{
+    width: 290px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 500px;
 }

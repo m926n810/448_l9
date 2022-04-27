@@ -27,7 +27,8 @@ for($i=0;$i<4;$i++){
 }
 $shipingfee = $_POST["shippingchoice"];
 $alltotal = $subtotal + $shippingfee;
-echo "  <title>Nhat's Webstore</title>
+echo "<head>  
+<title>Nhat's Webstore</title>
 <link rel='stylesheet' href='style.css'>
 <script type='text/javascript' src='formChecker.js'></script>
 </head>
@@ -36,6 +37,7 @@ echo "  <title>Nhat's Webstore</title>
     <header class='brand'>Nhat's Webstore</header>
 </div>
 <div class='receive-center'>
+<h1 class='brand' style='color: rgb(255, 255, 206)'>Thank you <br>for shopping with us!</h1>
     <table class='bought-list'>
         <tr>
             <th>Item name</th>
@@ -46,30 +48,25 @@ echo "  <title>Nhat's Webstore</title>
 for($i=0;$i<4;$i++){
     if($quantity[$i]>0){
         echo "<tr>
-                <th>" .$item[$i]." </th>
-                <th>".$price[$i]."</th>
-                <th>".$quantity[$i]."</th>
-                <th>".$total[$i]."</th>
+                <td>" .$item[$i]." </td>
+                <td>".$price[$i]."</td>
+                <td>".$quantity[$i]."</td>
+                <td>".$total[$i]."</td>
             </tr>";
     }
 }
-echo " <tr>
-            <th></th>
-            <th></th>
+echo " </table>
+<table class='totaltable'><tr>
             <th>Sub-total:</th>
-            <th>".$subtotal."</th>
+            <td>".$subtotal."</td>
         </tr>
         <tr>
-            <th></th>
-            <th></th>
             <th>Shipping fee: </th>
-            <th>".$shipingfee."</th>
+            <td>".$shipingfee."</td>
         </tr>
         <tr>
-            <th></th>
-            <th></th>
             <th>Total:</th>
-            <th>".$total."</th>
+            <td>".$alltotal."</td>
         </tr>
     </table>
 </div>";
