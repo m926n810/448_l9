@@ -49,24 +49,25 @@ for($i=0;$i<4;$i++){
     if($quantity[$i]>0){
         echo "<tr>
                 <td>" .$item[$i]." </td>
-                <td>$".$price[$i]."</td>
+                <td>$".number_format($price[$i], 2, '.', ',')."</td>
                 <td>".$quantity[$i]."</td>
-                <td>$".$total[$i]."</td>
+                <td>$".$total[$i].".00</td>
             </tr>";
     }
 }
 echo " </table>
-<table class='totaltable'><tr>
+<table class='totaltable'>
+        <tr>
             <th>Sub-total:</th>
-            <td>&emsp;$".$subtotal."</td>
+            <td>&emsp;$".number_format($subtotal, 2, '.', ',')."</td>
         </tr>
         <tr>
             <th>Shipping fee: </th>
-            <td>&emsp;$".$shipingfee."</td>
+            <td>&emsp;$".number_format($shipingfee, 2, '.', ',')."</td>
         </tr>
         <tr>
             <th>Total:</th>
-            <td>&emsp;$".$alltotal."</td>
+            <td>&emsp;$".number_format($alltotal, 2, '.', ',')."</td>
         </tr>
     </table>
 </div>";
