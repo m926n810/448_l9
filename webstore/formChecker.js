@@ -1,5 +1,3 @@
-
-
 let cartscreen;
 let password;
 let email;
@@ -32,10 +30,31 @@ function checkout_button_handler(){
         if(!incartitems[i].classList.contains('hidden')) allhidden=false;
         console.log(incartitems[i].id);
     }
-    if(allhidden) document.getElementsByClassName('check-out')[0].classList.add('hidden');
-    else document.getElementsByClassName('check-out')[0].classList.remove('hidden');
+    if(allhidden){
+        document.getElementById('submit-butt').classList.add('hidden');
+    }
+    else document.getElementById('submit-butt').classList.remove('hidden');
 }
 
-
+function rm_item_handler(item){
+    let itemname;
+    switch (item){
+        case 'i1':
+            itemname = 'coconut';
+            break;
+        case 'i2':
+            itemname = 'avocado';
+            break;
+        case 'i3':
+            itemname = 'umbrella';
+            break;
+        case 'i4':
+            itemname = 'yacht';
+            break;
+    }
+    document.getElementById(item).classList.add('hidden');
+    checkout_button_handler();
+    document.getElementsByClassName(itemname).value=0;
+}
 
 

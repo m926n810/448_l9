@@ -13,71 +13,88 @@
         <header class="brand">Nhat's Webstore</header>
     </div>
     <div class="center">
+        
+        <iframe scr="demo.htm" name="checkoutframe" tittle="checkoutframe"></iframe>
         <div class="semi-center">
             <div class="item-label">
                 <i>Items list</i>
             </div>
 
             <div class="itemsbox">
-            <div class="item" id="item1"> 
-                <img class="itlist" src="images/coconut.jpg">
-                <label for="item1">Coconut water</label>
-                <i class="price">$200</i>
-                <button class="addtocart" onclick="document.getElementById('i1').classList.remove('hidden'); checkout_button_handler();">Add to cart</button>
-            </div>
-            <div class="item" id="item2">
-                <img class="itlist" src="images/avocado.jpg">
-                <label for="item2">Avocado float</label>
-                <i class="price">$300</i>
-                <button class="addtocart" onclick="document.getElementById('i2').classList.remove('hidden');checkout_button_handler();">Add to cart</button>
-            </div>
-            <div class="item" id="item3"> 
-                <img class="itlist" src="images/umbrell.jpg">
-                <label for="item3">Umbrella chilling set</label>
-                <i class="price">$1.200</i>
-                <button class="addtocart" onclick="document.getElementById('i3').classList.remove('hidden');checkout_button_handler();">Add to cart</button>
-            </div>
-            <div class="item" id="item4"> 
-                <img class="itlist" src="images/yatch.jpg">
-                <label for="item4">Luxury Yacht</label>
-                <i class="price">$30.000.000</i>
-                <button class="addtocart" onclick="document.getElementById('i4').classList.remove('hidden');checkout_button_handler();">Add to cart</button>
-            </div></div>
+                <div class="item" id="item1"> 
+                    <img class="itlist" src="images/coconut.jpg">
+                    <label for="item1">Coconut water</label>
+                    <i class="price">$200</i>
+                    <button class="addtocart" onclick="document.getElementById('i1').classList.remove('hidden'); checkout_button_handler();">Add to cart</button>
+                </div>
+                <div class="item" id="item2">
+                    <img class="itlist" src="images/avocado.jpg">
+                    <label for="item2">Avocado float</label>
+                    <i class="price">$300</i>
+                    <button class="addtocart" onclick="document.getElementById('i2').classList.remove('hidden');checkout_button_handler();">Add to cart</button>
+                </div>
+                <div class="item" id="item3"> 
+                    <img class="itlist" src="images/umbrell.jpg">
+                    <label for="item3">Umbrella chilling set</label>
+                    <i class="price">$1.200</i>
+                    <button class="addtocart" onclick="document.getElementById('i3').classList.remove('hidden');checkout_button_handler();">Add to cart</button>
+                </div>
+                <div class="item" id="item4"> 
+                    <img class="itlist" src="images/yatch.jpg">
+                    <label for="item4">Luxury Yacht</label>
+                    <i class="price">$30.000.000</i>
+                    <button class="addtocart" onclick="document.getElementById('i4').classList.remove('hidden');checkout_button_handler();">Add to cart</button>
+                </div></div>
         </div>
 
         <div class="cart" id="cartid">
+            <form action="checkout.php" method="post" target="checkoutframe">
             <div class="cart-label"> 
                 <i>Your cart</i>
             </div>
             <div class="addeditem "id="i1">
                 <img class="img-incart" src="images/coconut.jpg">
                 <div class="quantity"><label class="item-incart-labels">Coconut water</label>
+                    <i style="font-size: 12px; color:white;">Quantity:</i>
                     <input class="quanbox coconut" type="number" min="0" max="20">
-                    <button class="rm" onclick="document.getElementById('i1').classList.add('hidden'); checkout_button_handler();">remove from cart</button>
+                    <button class="rm" onclick="rm_item_handler('i1')">remove from cart</button>
                 </div>
             </div>
             <div class="addeditem "id="i2">
                 <img class="img-incart" src="images/avocado.jpg"> 
                 <div class="quantity"><label class="item-incart-labels">Avocado float</label>
+                    <i style="font-size: 12px; color:white;">Quantity:</i>
                     <input class="quanbox avocado" type="number" min="0" max="20">
-                    <button class="rm" onclick="document.getElementById('i2').classList.add('hidden'); checkout_button_handler();">remove from cart</button>
+                    <button class="rm" onclick="rm_item_handler('i2')">remove from cart</button>
                 </div>
             </div>
             <div class="addeditem "id="i3">
                 <img class="img-incart" src="images/umbrell.jpg">
                 <div class="quantity"><label class="item-incart-labels">Umbrella chilling set</label>
+                    <i style="font-size: 12px; color:white;">Quantity:</i>
                     <input class="quanbox umbrella" type="number" min="0" max="20">
-                    <button class="rm" onclick="document.getElementById('i3').classList.add('hidden');checkout_button_handler();">remove from cart</button>
+                    <button class="rm" onclick="rm_item_handler('i3')">remove from cart</button>
                 </div>
             </div>
             <div class="addeditem "id="i4">
                 <img class="img-incart" src="images/yatch.jpg">
                 <div class="quantity"><label class="item-incart-labels">Luxury Yacht</label>
+                    <i style="font-size: 12px; color:white;">Quantity:</i>
                     <input class="quanbox yacht" type="number" min="0" max="20">
-                    <button class="rm" onclick="document.getElementById('i4').classList.add('hidden');checkout_button_handler();">remove from cart</button>
+                    <button class="rm" onclick="rm_item_handler('i4')">remove from cart</button>
                 </div>
             </div>
-            <button class="check-out">Check-out</button>
+            <center id="submit-butt">
+                <div class="shipping">
+                    <input type="radio" id="free" name="shippingchoice" value="Free">
+                    <label for="free">Free 7 days&nbsp;&nbsp;&ensp;&emsp;</label><br>
+                    <input type="radio" id="five" name="shippingchoice" value="$5">
+                    <label for="five">$5 three days&ensp;&ensp;</label><br>
+                    <input type="radio" id="fifty" name="shippingchoice" value="$50">
+                    <label for="fifty">$50 over night&ensp;</label>
+                </div>
+                <input type="submit" value="Check-out" class="check-out-button"></input></center>
+        </form>
         </div>
 
         <div class="log-in" id="loginid">
