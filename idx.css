@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(207, 242, 231);
+}
+.center{
+    flex-direction:  column;
+    display: flex;
+    align-content: flex-start;
+}
+button{
+    margin: auto;
+    height: 100px;
+    width: 300px;
+    margin-top: 20px;
+    background-color: rgb(252, 252, 205);
+    color: rgb(176, 115, 255);
+    font-size: 30px;
+    border-color: rgb(95, 1, 184);
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(176, 115, 255);
+    color:rgb(252, 234, 223);
+    border-color: white;
+    transition: 0.2s ease-in-out;
+}
+h1{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: rgb(142, 75, 230);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
