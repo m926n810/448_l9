@@ -22,7 +22,6 @@ $total = array() ;
 $subtotal=0;
 $alltotal = 0;
 for($i=0;$i<4;$i++){
-    if($quantity[$i] == "Array") $quantity[$i] = 0;
     $total[$i] = $price[$i]*$quantity[$i];
     $subtotal += $total[$i];
 }
