@@ -51,7 +51,7 @@ for($i=0;$i<4;$i++){
                 <td>" .$item[$i]." </td>
                 <td>$".number_format($price[$i], 2, '.', ',')."</td>
                 <td>".$quantity[$i]."</td>
-                <td>$".$total[$i].".00</td>
+                <td>$".number_format($total[$i], 2, '.', ',')."</td>
             </tr>";
     }
 }
